@@ -1,0 +1,23 @@
+.search{
+  height: 100%;
+  max-width: 21rem;
+  background-color:$primary;
+}
+.search__input{
+  display: block;
+  width: 100%;
+  padding: 1.2rem 2rem;
+
+  background-color:transparent;
+  border: none;
+
+  font-family: Roboto;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color:$white;
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+}

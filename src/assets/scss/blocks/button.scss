@@ -1,0 +1,40 @@
+.btn{
+  display: block;
+  border-radius: 2.5rem;
+  border:none;
+  padding: 1.1em 2.1em;
+  box-sizing:border-box;
+
+  background-color:$secondary;
+
+ 
+  font-family: Roboto;
+  text-align: center;
+  text-decoration: none;
+  color:#fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  transition: background-color .2s linear;
+  background-color:$red;
+
+  &--red{
+  background-color:$red;
+  box-shadow: 0px 7px 17px -10px rgba($red, 0.2);
+    &:hover{
+     background-color:darken($red, 5%);
+  }
+}
+  &--blue{
+  background-color:$blue;
+  box-shadow: 0px 7px 17px -10px rgba($blue, 0.35);
+    &:hover{
+      background-color:darken($blue, 5%);
+      
+  }
+ }
+}
+.btn ~ .btn{
+  margin-left: 2rem;
+}
