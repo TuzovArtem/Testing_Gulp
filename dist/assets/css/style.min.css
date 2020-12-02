@@ -535,8 +535,7 @@ body {
   margin-left: 2rem; }
 
 .main {
-  padding-top: 10rem;
-  padding-left: 300px; }
+  padding: 10rem 0 8rem 300px; }
 
 .stories {
   display: flex;
@@ -651,3 +650,212 @@ body {
   margin: 0 auto;
   padding-left: 5rem;
   padding-right: 5rem; }
+
+.post {
+  padding: 2.5rem;
+  background: #202020;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  margin-bottom: 3rem; }
+
+.post__description {
+  font-size: 1.4rem;
+  color: #D2D2D2; }
+
+.post__text {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #fff;
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 1rem; }
+  .post__text p {
+    margin-bottom: 2rem;
+    font-weight: 400; }
+  .post__text h2, .post__text h3, .post__text h4, .post__text h5, .post__text h6 {
+    margin-bottom: 2rem;
+    font-weight: 700; }
+  .post__text h2 {
+    font-size: 1.5em; }
+  .post__text h3 {
+    font-size: 1.25em; }
+  .post__text h4 {
+    font-size: 1.15em;
+    background-color: red; }
+  .post__text h5, .post__text h6 {
+    font-size: 1em; }
+  .post__text ul, .post__text ol {
+    margin-bottom: 2rem; }
+  .post__text ol {
+    list-style: decimal;
+    list-style-position: inside; }
+  .post__text img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  .post__text table {
+    margin-bottom: 2rem;
+    width: 100%; }
+  .post__text a {
+    color: #3137C9;
+    text-decoration: none; }
+    .post__text a:hover {
+      text-decoration: underline; }
+  .post__text .fr-video {
+    display: block;
+    position: relative;
+    overflow: hidden; }
+    .post__text .fr-video:before {
+      content: '';
+      display: block;
+      padding-top: 56.25%; }
+    .post__text .fr-video iframe,
+    .post__text .fr-video video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.post__preview {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.post__data {
+  display: flex; }
+
+.post__data-item {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #828282; }
+  .post__data-item a {
+    color: #828282;
+    text-decoration: none; }
+    .post__data-item a:hover {
+      text-decoration: underline; }
+
+.post__header {
+  margin: 0 0 2.5rem; }
+  .post__header--preview {
+    margin: -2.5rem -2.5rem 2.5rem; }
+  .post__header--open {
+    margin-bottom: 3rem; }
+
+.post__content {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.post__title {
+  margin-bottom: 1.5rem; }
+  .post__title--mb0 {
+    margin-bottom: .5rem; }
+
+.post__link {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-family: Roboto;
+  color: #fff;
+  text-decoration: none; }
+  .post__link:hover {
+    text-decoration: underline; }
+
+.post__data-item {
+  position: relative; }
+  .post__data-item:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #C4C4C4;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    position: relative;
+    top: -2px; }
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.post__footer-link {
+  text-transform: lowercase;
+  font-family: Roboto;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: right;
+  color: #107EFF;
+  text-decoration: none; }
+  .post__footer-link:hover {
+    text-decoration: underline; }
+
+.post__actions {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between; }
+  .post__actions--link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.2s linear; }
+    .post__actions--link:hover {
+      text-decoration: underline;
+      opacity: 1; }
+  .post__actions--icon {
+    margin-left: 0.7rem; }
+
+.embed {
+  position: relative;
+  overflow: hidden; }
+  .embed:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; }
+  .embed iframe,
+  .embed video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem; }
+  .pagination__item {
+    margin: 0 0.5rem; }
+  .pagination__link {
+    display: block;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    background-color: #0D0D0D;
+    border-radius: 3px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color .2s linear; }
+    .pagination__link:hover {
+      background-color: #272727; }
+    .pagination__link.active {
+      background-color: #3137C9;
+      box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.15); }
+
+.relatid {
+  border-bottom: 1px solid #1c1c1c;
+  padding: 3rem 0; }
+  .relatid h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: Roboto;
+    margin-bottom: 2rem; }
