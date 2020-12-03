@@ -19,6 +19,13 @@ body {
     box-sizing: border-box;
 }
 
+a{
+    color:inherit;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 
 /* Blocks */
 @import "blocks/page";
@@ -37,6 +44,8 @@ body {
 @import "blocks/embed";
 @import "blocks/pagination";
 @import "blocks/relatid";
+@import "blocks/comments";
+@import "blocks/form";
 
 
 

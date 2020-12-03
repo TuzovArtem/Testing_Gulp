@@ -21,6 +21,7 @@
   font-size: 1.1rem;
   color: $white;
   &:hover{
-    text-decoration: underline;
+    background-color:darken($blue, 5%);
+    text-decoration: none;
   }
 }
