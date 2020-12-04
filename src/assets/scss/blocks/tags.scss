@@ -1,0 +1,20 @@
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.tags__item{
+  padding: 0.4rem 0.9rem ;
+  background-color:#EA8C1E;
+  border-radius:3px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+
+  font-size: 11px;
+ 
+}
+.work__footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
