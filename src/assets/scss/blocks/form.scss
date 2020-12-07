@@ -1,6 +1,10 @@
 .form__group{
   margin-bottom: 1.5rem;
   position: relative;
+
+  &--md{
+    margin-bottom: 2.5rem;
+  }
 }
 
 .form__control{
@@ -17,7 +21,7 @@
   width: 100%;
   font-family: Roboto;
 
-  padding: .5rem 0;
+  padding: .5rem 0 0.75rem;
   
   &::placeholder{
    color: rgba($white, 0.2);

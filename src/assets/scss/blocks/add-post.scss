@@ -39,7 +39,7 @@
 
    transition: background-color 0.2s linear;
    background: #ebebeb
-               url("../images/stories/ico_photo.svg")
+               url("/assets/images/stories/ico_photo.svg")
                center
                no-repeat;
   &:hover{
@@ -64,7 +64,7 @@
     border:none;
 
     background: $blue
-                url("../images/stories/ico_send.svg")
+                url("/assets/images/stories/ico_send.svg")
                 center
                 no-repeat;
     transition: background-color 0.2s linear;

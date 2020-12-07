@@ -641,7 +641,7 @@ a {
   cursor: pointer;
   margin-right: 1.5rem;
   transition: background-color 0.2s linear;
-  background: #ebebeb url("../images/stories/ico_photo.svg") center no-repeat; }
+  background: #ebebeb url("/assets/images/stories/ico_photo.svg") center no-repeat; }
   .add-post-file:hover {
     background-color: #dedede; }
   .add-post-file input {
@@ -656,7 +656,7 @@ a {
   height: 44px;
   border-radius: 50%;
   border: none;
-  background: #3137C9 url("../images/stories/ico_send.svg") center no-repeat;
+  background: #3137C9 url("/assets/images/stories/ico_send.svg") center no-repeat;
   transition: background-color 0.2s linear; }
   .add-post-btn:hover {
     background-color: #2c31b4; }
@@ -952,6 +952,8 @@ a {
 .form__group {
   margin-bottom: 1.5rem;
   position: relative; }
+  .form__group--md {
+    margin-bottom: 2.5rem; }
 
 .form__control {
   display: block;
@@ -965,7 +967,7 @@ a {
   color: #fff;
   width: 100%;
   font-family: Roboto;
-  padding: .5rem 0; }
+  padding: .5rem 0 0.75rem; }
   .form__control::placeholder {
     color: rgba(255, 255, 255, 0.2); }
   .form__control--textarea {
@@ -1037,43 +1039,25 @@ a {
   display: flex;
   justify-content: flex-end; }
 
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-46px); }
-  .profile .profile__avatar {
-    display: block;
-    width: 10rem;
-    height: 10rem;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25); }
-  .profile .profile__name {
-    margin-top: 1.9rem;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    text-align: center; }
-  .profile .profile__profession {
-    font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    text-align: center;
-    color: #DEDEDE; }
-  .profile .profile__text {
-    margin-top: 3rem;
-    padding: 3rem 2rem;
-    font-family: Roboto;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    text-align: center;
-    border-top: 1px solid #1c1c1c;
-    border-bottom: 1px solid #1c1c1c; }
+.cabinet {
+  display: flex; }
 
-.social {
-  display: flex;
-  margin-top: 1.8rem; }
-  .social .social__item ~ .social__item {
-    margin-left: 1.5rem; }
+.cabinet__form {
+  width: 34rem; }
+
+.cabinet__avatar {
+  flex-grow: 1;
+  padding-left: 11rem; }
+  .cabinet__avatar img {
+    display: block; }
+
+.cabinet__file {
+  display: block;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  color: #3137C9;
+  text-decoration: underline; }
+  .cabinet__file input {
+    display: none; }
+  .cabinet__file:hover {
+    color: #4248d1; }
