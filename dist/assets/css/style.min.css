@@ -332,6 +332,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.4rem;
   color: #fff; }
+  body.no-scroll {
+    overflow: hidden; }
 
 *,
 *:before,
@@ -346,12 +348,18 @@ a {
 
 /* Blocks */
 .page {
-  overflow: hidden; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh; }
 
 .page__title {
   margin-bottom: 3rem;
   font-size: 2.1rem;
   color: #fff; }
+  .page__title--center {
+    text-align: center; }
 
 .header {
   display: flex;
@@ -518,7 +526,6 @@ a {
     margin-left: 1.5rem; }
 
 .btn {
-  display: block;
   border-radius: 2.5rem;
   border: none;
   padding: 1.1em 2.1em;
@@ -540,7 +547,7 @@ a {
   .btn--blue {
     background-color: #3137C9;
     box-shadow: 0px 7px 17px -10px rgba(49, 55, 201, 0.35); }
-    .btn--blue:hover {
+    .btn--blue:hover, .btn--blue:focus {
       background-color: #2c31b4; }
   .btn--rounded {
     border-radius: .5rem; }
@@ -949,6 +956,10 @@ a {
   .comments__reply:hover {
     text-decoration: underline; }
 
+.form--auth {
+  max-width: 28rem;
+  margin: 0 auto; }
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative; }
@@ -986,6 +997,18 @@ a {
   bottom: 0;
   z-index: 1;
   transition: width 0.2s linear; }
+
+.form__footer--center {
+  text-align: center; }
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem; }
+  .form__footer-list li {
+    margin: 0.5rem; }
+  .form__footer-list a {
+    color: white; }
 
 .work {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
@@ -1060,4 +1083,49 @@ a {
   .cabinet__file input {
     display: none; }
   .cabinet__file:hover {
-    color: #4248d1; }
+    color: #4248d1;
+    text-decoration: none; }
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1010; }
+
+.modal__content {
+  width: 100%;
+  max-width: 50rem;
+  padding: 8rem 8rem 2.5rem;
+  background-color: #202020;
+  border-radius: 5px;
+  position: relative; }
+
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: .5;
+  transition: transform 0.2s linear, opacity 0.2s linear; }
+  .modal__close:hover {
+    transform: rotate(90deg);
+    opacity: 1; }
+
+.modal__footer {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  color: #B3B3B3; }
+  .modal__footer--link {
+    margin-right: 1rem; }

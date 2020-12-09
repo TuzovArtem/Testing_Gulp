@@ -12,6 +12,9 @@ body {
     font-size: 1.4rem;
     color: $white;
 
+  &.no-scroll{
+    overflow: hidden;
+  }
 }
 *,
 *:before,
@@ -50,6 +53,7 @@ a{
 @import "blocks/tags";
 @import "blocks/cabinet";
 @import "blocks/singup";
+@import "blocks/modal";
 
 
 
