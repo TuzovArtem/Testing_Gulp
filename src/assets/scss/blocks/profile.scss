@@ -48,8 +48,13 @@
 
 .social{
 	display: flex;
+	justify-content: center;
 	margin-top: 1.8rem;
 		.social__item ~ .social__item {
 			margin-left: 1.5rem;
 		}		
+
+		&--no_margin{
+			margin: 0;
+		}
 }

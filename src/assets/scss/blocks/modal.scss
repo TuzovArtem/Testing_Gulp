@@ -5,6 +5,7 @@
 
   height: 100%;
   width: 100%;
+  padding: 1rem;
 
   background-color:rgba($black, .8);
 
@@ -17,13 +18,17 @@
 .modal__content{
   width: 100%;
   max-width: 50rem;
-  padding: 8rem 8rem 2.5rem;
+  padding: 8rem 8rem;
   background-color:$primary;
   
 
   border-radius: 5px;
  
   position: relative;
+
+  &--contact{
+    padding-bottom:2.5rem ;
+  }
 }
 
 .modal__close{
@@ -55,5 +60,12 @@
 
     &--link{
       margin-right: 1rem;
+    }
+    a{
+      color:inherit;
+      text-decoration:underline;
+      &:hover{
+        text-decoration: none;
+      }
     }
 }
